@@ -34,7 +34,9 @@ const Hero = () => {
       </HeroBg>
       <HeroContent>
         <HeroH1> Hey! I am Tejasvi</HeroH1>
-        <HeroP>Backend Developer / Machine Learning / Web Development</HeroP>
+        <HeroP>
+          Backend Developer /<br /> Machine Learning /<br /> Web Development /
+        </HeroP>
         <HeroBtnWrapper>
           <Button
             to="signup"

@@ -18,14 +18,18 @@ export const HeroContainer = styled.div`
   position: relative;
   z-index: 1;
   :before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.2)0%, rgba(0,0,0,0.6)100%),  
-    linear-gradient(180deg, rgba(0,0,0,0.2)0%, transparent 100%)
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
     z-index: 2;
   }
 `;
@@ -61,10 +65,10 @@ export const HeroH1 = styled.h1`
   font-size: 48px;
   text-align: center;
 
-  @media screen and (max-wodth: 768px) {
+  @media screen and (max-width: 768px) {
     font-size: 40px;
   }
-  @media screen and (max-wodth: 480px) {
+  @media screen and (max-width: 480px) {
     font-size: 32px;
   }
 `;
@@ -76,10 +80,10 @@ export const HeroP = styled.p`
   text-align: center;
   max-width: 600px;
 
-  @media screen and (max-wodth: 768px) {
+  @media screen and (max-width: 768px) {
     font-size: 24px;
   }
-  @media screen and (max-wodth: 480px) {
+  @media screen and (max-width: 480px) {
     font-size: 18px;
   }
 `;
@@ -103,60 +107,88 @@ export const HeroIconWrapper = styled.div`
   margin-top: 32px;
   display: flex;
   flex-direction: row;
+  @media screen and (max-width: 480px) {
+    margin-top: 18;
+  }
 `;
 
 export const Github = styled(FaGithub)`
+  cursor: pointer;
   color: #fff;
   height: 30px;
   width: 30px;
   margin: 17px;
   &:hover {
     transition: all 0.3s ease-out;
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0.7);
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0.8);
     color: #01bf71;
+  }
+  @media screen and (max-width: 480px) {
+    height: 25px;
+    width: 25px;
   }
 `;
 export const Linkedin = styled(FaLinkedin)`
+  cursor: pointer;
   color: #fff;
   height: 30px;
   width: 30px;
   margin: 17px;
   &:hover {
     transition: all 0.3s ease-out;
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0.7);
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0.8);
     color: #01bf71;
+  }
+  @media screen and (max-width: 480px) {
+    height: 25px;
+    width: 25px;
   }
 `;
 export const Instagram = styled(FaInstagram)`
+  cursor: pointer;
   color: #fff;
   height: 30px;
   width: 30px;
   margin: 17px;
   &:hover {
     transition: all 0.3s ease-out;
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0.7);
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0.8);
     color: #01bf71;
+  }
+  @media screen and (max-width: 480px) {
+    height: 25px;
+    width: 25px;
   }
 `;
 export const Google = styled(FaGoogle)`
+  cursor: pointer;
   color: #fff;
   height: 30px;
   width: 30px;
   margin: 17px;
   &:hover {
     transition: all 0.3s ease-out;
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0.7);
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0.8);
     color: #01bf71;
+  }
+  @media screen and (max-width: 480px) {
+    height: 25px;
+    width: 25px;
   }
 `;
 export const Kaggle = styled(FaKaggle)`
+  cursor: pointer;
   color: #fff;
   height: 28px;
   width: 28px;
   margin: 17px;
   &:hover {
     transition: all 0.3s ease-out;
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0.7);
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0.8);
     color: #01bf71;
+  }
+  @media screen and (max-width: 480px) {
+    height: 25px;
+    width: 25px;
   }
 `;
