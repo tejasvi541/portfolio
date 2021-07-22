@@ -54,11 +54,25 @@ const Hero = () => {
           </Button>
         </HeroBtnWrapper>
         <HeroIconWrapper>
-          <Linkedin />
-          <Github />
-          <Google />
-          <Instagram />
-          <Kaggle />
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/tejasvi-88b799179/"
+          >
+            <Linkedin />
+          </a>
+
+          <a target="_blank" href="https://github.com/tejasvi541/">
+            <Github />
+          </a>
+          <a target="_blank" href="mailto:tejasvi.tanwar541@gmail.com">
+            <Google />
+          </a>
+          <a target="_blank" href="https://www.instagram.com/tejasvi.__/">
+            <Instagram />
+          </a>
+          <a target="_blank" href="https://www.kaggle.com/tejasvii">
+            <Kaggle />
+          </a>
         </HeroIconWrapper>
       </HeroContent>
     </HeroContainer>
