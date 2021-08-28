@@ -73,6 +73,7 @@ export const Heading = styled.h1`
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
+    line-height: 1;
   }
 `;
 
@@ -80,8 +81,11 @@ export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 30px;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+  @media screen and (max-width: 480px) {
+    line-height: 25px;
+  }
 `;
 
 export const BtnWrap = styled.div`
@@ -93,18 +97,26 @@ export const ImgWrap = styled.div`
   background-color: rgba(1, 191, 113, 0.79);
   backdrop-filter: blur(10px);
   padding-right: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
   border-radius: 20px;
   max-width: 555px;
   height: 100%;
   overflow: hidden;
+  @media screen and (max-width: 480px) {
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
 `;
 
 export const Img = styled.img`
   width: 400px;
   height: 400px;
   border-radius: 20px;
-  margin: 0 0 10px 0;
+  margin: 0 0 15px 0;
   padding-right: 0;
   overflow: hidden;
+  @media screen and (max-width: 480px) {
+    width: 300px;
+    height: 300px;
+  }
 `;

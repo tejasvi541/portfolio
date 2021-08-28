@@ -57,20 +57,37 @@ const Hero = () => {
           <a
             target="_blank"
             href="https://www.linkedin.com/in/tejasvi-88b799179/"
+            rel="noopener noreferrer"
           >
             <Linkedin />
           </a>
 
-          <a target="_blank" href="https://github.com/tejasvi541/">
+          <a
+            target="_blank"
+            href="https://github.com/tejasvi541/"
+            rel="noopener noreferrer"
+          >
             <Github />
           </a>
-          <a target="_blank" href="mailto:tejasvi.tanwar541@gmail.com">
+          <a
+            target="_blank"
+            href="mailto:tejasvi.tanwar541@gmail.com"
+            rel="noopener noreferrer"
+          >
             <Google />
           </a>
-          <a target="_blank" href="https://www.instagram.com/tejasvi.__/">
+          <a
+            target="_blank"
+            href="https://www.instagram.com/tejasvi.__/"
+            rel="noopener noreferrer"
+          >
             <Instagram />
           </a>
-          <a target="_blank" href="https://www.kaggle.com/tejasvii">
+          <a
+            target="_blank"
+            href="https://www.kaggle.com/tejasvii"
+            rel="noopener noreferrer"
+          >
             <Kaggle />
           </a>
         </HeroIconWrapper>
