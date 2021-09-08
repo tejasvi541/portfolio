@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProjectsContainer = styled.div`
-  height: 860px;
+  height: 970px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,15 +49,16 @@ export const ProjectsCard = styled.div`
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    transform: scale(1.02);
+    transform: scale(1.07);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
 `;
 export const ProjectsIcon = styled.img`
-  height: 160px;
-  width: 160px;
-  margin-bottom: 10px;
+  height: 120px;
+  width: 100%;
+  border-radius: 10%;
+  margin: 10px 10px 10px 10px;
 `;
 export const ProjectsH1 = styled.h1`
   font-size: 2.5rem;
@@ -75,7 +76,7 @@ export const ProjectsH2 = styled.h2`
 `;
 
 export const ProjectsP = styled.p`
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-align: center;
 `;
 
@@ -83,7 +84,7 @@ export const ProjectsLinkWrapper = styled.div`
   max-width: 1000px;
   margin: 15px auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: ${({ live }) => (live ? "1fr 1fr" : "1fr")};
   align-items: center;
   grid-gap: 10px;
   padding: 0 50px;
