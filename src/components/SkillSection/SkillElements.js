@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const SkillContainer = styled.div`
   background: #f9f9f9;
   height: 860px;
+  padding-top: 20px;
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;

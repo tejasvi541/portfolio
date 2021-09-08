@@ -45,25 +45,54 @@ const Navbar = ({ toggle }) => {
               <FaBars />
             </MobileIcon>
             <NavMenu>
-              {[
-                { to: "about", title: "About" },
-                { to: "skills", title: "Skills" },
-                { to: "projects", title: "Projects" },
-                { to: "contact", title: "Contact me" },
-              ].map(({ to, title }) => (
-                <NavItem key={to}>
-                  <NavLinks
-                    to={to}
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact="true"
-                    offset={-60}
-                  >
-                    {title}
-                  </NavLinks>
-                </NavItem>
-              ))}
+              <NavItem>
+                <NavLinks
+                  to="about"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-40}
+                >
+                  About
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks
+                  to="skills"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
+                >
+                  Skills
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks
+                  to="projects"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-70}
+                >
+                  Projects
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks
+                  to="contact"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
+                >
+                  Contact Me!
+                </NavLinks>
+              </NavItem>
             </NavMenu>
             <NavBtn>
               <NavBtnLink

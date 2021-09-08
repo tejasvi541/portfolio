@@ -39,7 +39,7 @@ const Hero = () => {
         </HeroP>
         <HeroBtnWrapper>
           <Button
-            to="signup"
+            to="about"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"
@@ -48,7 +48,7 @@ const Hero = () => {
             duration={500}
             spy={true}
             exact="true"
-            offset={-80}
+            offset={-40}
           >
             Get Started {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>

@@ -32,7 +32,7 @@ import {
 const SkillSection = () => {
   return (
     <Fragment>
-      <SkillContainer>
+      <SkillContainer id="skills">
         <TextWrapper>
           <TopLine>
             My <TopLine>Major</TopLine>

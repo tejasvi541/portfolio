@@ -6,6 +6,7 @@ import InfoSection from "../components/InfoSection";
 import SkillSection from "../components/SkillSection";
 
 import { myInfoObj } from "../components/InfoSection/Data";
+import Projects from "../components/Projects";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,6 +22,7 @@ const Home = () => {
       <HeroSection />
       <InfoSection {...myInfoObj} />
       <SkillSection />
+      <Projects />
     </Fragment>
   );
 };
