@@ -53,12 +53,19 @@ export const ProjectsCard = styled.div`
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
+  @media screen and (max-width: 640px) {
+    margin: auto 20px;
+  }
 `;
 export const ProjectsIcon = styled.img`
   height: 120px;
   width: 100%;
   border-radius: 10%;
   margin: 10px 10px 10px 10px;
+
+  @media screen and (max-width: 680px) {
+    width: 70%;
+  }
 `;
 export const ProjectsH1 = styled.h1`
   font-size: 2.5rem;
@@ -107,6 +114,7 @@ export const ProjectsLink = styled.a`
   padding: 5px 11px;
   color: #010606;
   font-size: 14px;
+  align-items: center;
   outline: none;
   border: none;
   cursor: pointer;

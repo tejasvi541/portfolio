@@ -2,14 +2,13 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Container = styled.div`
-  min-height: 768px;
+  height: 860px;
 
   background: #f9f9f9;
-  /* linear-gradient(
-    108deg,
-    rgba(1, 147, 86, 1) 0%,
-    rgba(10, 201, 122, 1) 100%
-  ); */
+
+  @media screen and (max-width: 480px) {
+    height: 740px;
+  }
 `;
 export const FormWrap = styled.div`
   height: 100%;
@@ -19,6 +18,7 @@ export const FormWrap = styled.div`
 
   @media screen and (max-width: 480px) {
     height: 80%;
+    margin: auto 10px;
   }
 `;
 export const Icon = styled(Link)`
@@ -33,6 +33,11 @@ export const Icon = styled(Link)`
     margin-left: 16px;
     margin-top: 8px;
   }
+`;
+export const FormP = styled.p`
+  font-weight: 500;
+  align-self: center;
+  visibility: ${({ emailSent }) => (emailSent ? "visible" : "hidden")};
 `;
 export const FormContent = styled.div`
   height: 100%;
