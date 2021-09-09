@@ -10,13 +10,12 @@ import {
   FormLabel,
   FormButton,
   FormText,
-  FormP,
+  //   FormP,
 } from "./ContactElements";
 
 const Contact = () => {
   const [email, setEmail] = useState("");
   const [query, setQuery] = useState("");
-  const [emailSent, setEmailSent] = useState(false);
 
   const isValidEmail = (email) => {
     const regex =
@@ -43,7 +42,6 @@ const Contact = () => {
 
         setEmail("");
         setQuery("");
-        setEmailSent(true);
       } else {
         alert("Enter All Fields");
       }
