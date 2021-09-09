@@ -95,13 +95,13 @@ export const BtnWrap = styled.div`
 
 export const ImgWrap = styled.div`
   background-color: rgba(1, 191, 113, 0.79);
-  backdrop-filter: blur(10px);
   padding-right: 15px;
   padding-bottom: 13px;
   border-radius: 20px;
   max-width: 555px;
   height: 100%;
   overflow: hidden;
+
   @media screen and (max-width: 480px) {
     padding-right: 10px;
     padding-bottom: 10px;
@@ -115,6 +115,7 @@ export const Img = styled.img`
   margin: 0 0 15px 0;
   padding-right: 0;
   overflow: hidden;
+
   @media screen and (max-width: 480px) {
     width: 300px;
     height: 300px;
