@@ -7,7 +7,7 @@
 
 # testing
 /coverage
-
+./src/loader.json
 # production
 /build
 

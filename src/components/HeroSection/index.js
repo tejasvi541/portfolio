@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Video from "../../videos/video.mp4";
+import { Typewriter } from "react-simple-typewriter";
 import {
   HeroContainer,
   HeroBg,
@@ -35,7 +36,19 @@ const Hero = () => {
       <HeroContent>
         <HeroH1> Hey! I am Tejasvi</HeroH1>
         <HeroP>
-          Backend Developer /<br /> Machine Learning /<br /> Web Development /
+          <span className="loaderText">
+            <Typewriter
+              words={[
+                "In Master's at Concordia Uni",
+                "Web Developer",
+                "Machine Learning Dev",
+              ]}
+              loop
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            />
+          </span>
         </HeroP>
         <HeroBtnWrapper>
           <Button

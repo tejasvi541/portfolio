@@ -64,7 +64,7 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-80}
+                  offset={-79}
                 >
                   Skills
                 </NavLinks>
@@ -97,7 +97,7 @@ const Navbar = ({ toggle }) => {
             <NavBtn>
               <NavBtnLink
                 target="_blank"
-                href="https://drive.google.com/file/d/1OeCRJcJLgzSCW15TGHvGlvdX7_7qhxCs/view?usp=sharing"
+                href="https://www.dropbox.com/scl/fi/2ocu8ompjf6v5374r1xgr/Resume_Tejasvi_Tech.pdf?rlkey=cyifgx9ii3tuulz7stxkh0sma&dl=0"
               >
                 Resume
               </NavBtnLink>
